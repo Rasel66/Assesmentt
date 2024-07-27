@@ -1,0 +1,87 @@
+.kzui-select {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
+}
+.kzui-select__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kzui-select__heading {
+  text-align: center;
+}
+.kzui-select__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.kzui-select__control--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.kzui-select__value {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.kzui-select__indicators {
+  display: flex;
+  align-items: center;
+}
+
+.kzui-select__clear {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.kzui-select__dropdown-indicator {
+  font-size: 12px;
+}
+
+.kzui-select__dropdown-indicator--open {
+  transform: rotateX(180deg);
+}
+
+.kzui-select__menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.kzui-select__search-input {
+  width: 87%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.kzui-select__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.kzui-select__option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.kzui-select__option--selected {
+  background-color: #f0f0f0;
+}
